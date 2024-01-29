@@ -8,7 +8,6 @@ const outfit = Outfit({ subsets: ["latin"] });
 // Meta information.
 
 export const metadata: Metadata = {
-  viewport: "width=device-width, initial-scale=1",
   title: "Frontend Mentor | QR code component",
   description: "Frontend Mentor | QR code component Challenge",
 };
@@ -25,7 +24,7 @@ const QrCodeComponent = () => {
         <div className="w-[340px] h-auto bg-white rounded-2xl p-4  shadow-slate-300 shadow-lg">
           <div className="overflow-hidden rounded-xl mb-3">
             <Image
-              src="/image-qr-code.png"
+              src="/qr-code-component/image-qr-code.png"
               alt="qr-code"
               width={340}
               height={340}

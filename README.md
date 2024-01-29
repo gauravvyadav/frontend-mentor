@@ -15,7 +15,7 @@ To run this project locally, follow these steps:
 2. Navigate to the project directory:
 
    ```bash
-   cd your-repository
+   cd frontend-mentor
    ```
 
 3. Install the required dependencies:
@@ -35,19 +35,3 @@ To run this project locally, follow these steps:
 ## Deployment
 
 The project is deployed on [Vercel](https://vercel.com/) at [Frontend Mentor Challenge](https://frontend-mentor-challenge-nextjs.vercel.app).
-
-## Commands
-
-- To install dependencies:
-
-  ```bash
-  npm install
-  ```
-
-- To run the development server:
-
-  ```bash
-  npm run dev
-  ```
-
-Feel free to explore and customize the project according to your needs. Happy coding!

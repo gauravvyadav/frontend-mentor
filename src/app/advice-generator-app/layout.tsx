@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import React from "react";
 import { Manrope } from "next/font/google";
 
-export const manrope = Manrope({
+const manrope = Manrope({
   weight: ["400", "800"],
   subsets: ["latin"],
 });

@@ -11,6 +11,10 @@ export default function Home() {
           link={"/advice-generator-app"}
           name={"Advice Generator App"}
         />
+        <CardList
+          link={"/social-links-profile"}
+          name={"Social links profile"}
+        />
       </div>
     </React.Fragment>
   );

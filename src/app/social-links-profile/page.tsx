@@ -74,7 +74,7 @@ const SocialLinksProfile = () => {
             {socialLinks.map((items) => (
               <Link
                 key={items.name}
-                className="w-full text-center text-white font-bold p-3 rounded-lg bg-[hsl(0_0%_20%)]"
+                className="w-full text-center text-white font-bold p-3 rounded-lg hover:bg-[hsl(75_94%_57%)] hover:text-black transition-all duration-75 bg-[hsl(0_0%_20%)]"
                 href={items.url}
               >
                 {items.name}

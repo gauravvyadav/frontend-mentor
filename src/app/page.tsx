@@ -15,6 +15,7 @@ export default function Home() {
           link={"/social-links-profile"}
           name={"Social links profile"}
         />
+        <CardList link={"/rest-countries"} name={"REST Countries"} />
       </div>
     </React.Fragment>
   );

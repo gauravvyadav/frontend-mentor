@@ -16,6 +16,7 @@ export default function Home() {
           name={"Social links profile"}
         />
         <CardList link={"/rest-countries"} name={"REST Countries"} />
+        <CardList link={"/multi-step-form"} name={"Multi-step form"} />
       </div>
     </React.Fragment>
   );

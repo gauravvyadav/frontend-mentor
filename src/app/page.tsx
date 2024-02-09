@@ -12,6 +12,7 @@ export default function Home() {
         <CardList link={"/rest-countries"} name={"REST Countries"} />
         <CardList link={"/multi-step-form"} name={"Multi-step form"} />
         <CardList link={"/chat-app-css"} name={"Chat app CSS"} />
+        <CardList link={"/faq-accordion"} name={"FAQ accordion"} />
       </div>
     </React.Fragment>
   );

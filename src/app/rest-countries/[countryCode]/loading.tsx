@@ -3,14 +3,14 @@ import React from "react";
 const Loading = () => {
   return (
     <React.Fragment>
-      <div className="w-full h-screen flex justify-center items-center">
+      <div className="flex h-screen w-full items-center justify-center">
         <div
           role="status"
-          className="w-full space-y-8 animate-pulse md:space-y-0 md:space-x-8 rtl:space-x-reverse md:flex md:items-center"
+          className="w-full animate-pulse space-y-8 md:flex md:items-center md:space-x-8 md:space-y-0 rtl:space-x-reverse"
         >
-          <div className="flex items-center justify-center w-full h-80 bg-gray-300 rounded sm:w-[500px] dark:bg-gray-700">
+          <div className="flex h-80 w-full items-center justify-center rounded bg-gray-300 dark:bg-gray-700 sm:w-[500px]">
             <svg
-              className="w-10 h-10 text-gray-200 dark:text-gray-600"
+              className="h-10 w-10 text-gray-200 dark:text-gray-600"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -20,12 +20,12 @@ const Loading = () => {
             </svg>
           </div>
           <div className="w-[60%]">
-            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[480px] mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[440px] mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
+            <div className="mb-4 h-2.5 w-48 rounded-full bg-gray-200 dark:bg-gray-700" />
+            <div className="mb-2.5 h-2 max-w-[480px] rounded-full bg-gray-200 dark:bg-gray-700" />
+            <div className="mb-2.5 h-2 rounded-full bg-gray-200 dark:bg-gray-700" />
+            <div className="mb-2.5 h-2 max-w-[440px] rounded-full bg-gray-200 dark:bg-gray-700" />
+            <div className="mb-2.5 h-2 max-w-[460px] rounded-full bg-gray-200 dark:bg-gray-700" />
+            <div className="h-2 max-w-[360px] rounded-full bg-gray-200 dark:bg-gray-700" />
           </div>
           <span className="sr-only">Loading...</span>
         </div>

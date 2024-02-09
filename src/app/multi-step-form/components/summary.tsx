@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { Fragment } from "react";
 import { addons, billingPlans } from "../data/data";
 
 interface SummaryProps {
@@ -9,7 +9,7 @@ interface SummaryProps {
   setSuccess: (success: boolean) => void;
 }
 
-const Summary = ({ formData, setFormData, currentStep, goToStep, setSuccess }: SummaryProps) => {
+const Summary = ({ formData, currentStep, goToStep, setSuccess }: SummaryProps) => {
   const planPrefix = formData.billing === "Monthly" ? "mo" : "yr";
   let addonsData: { title: string; billing: string; price: number }[] = [];
   let totlaAddonsPrice: number = 0;
@@ -30,7 +30,7 @@ const Summary = ({ formData, setFormData, currentStep, goToStep, setSuccess }: S
   const totalPrice = billingPlans[formData.billing][formData.plan] + totlaAddonsPrice;
 
   return (
-    <React.Fragment>
+    <Fragment>
       <div className="absolute left-1/2 top-[110px] m-auto w-[90%] -translate-x-1/2 rounded-lg bg-white p-5 shadow-md sm:relative sm:top-0 sm:m-0 sm:w-full sm:p-0 sm:shadow-none">
         <div className="mb-4 w-full">
           <h1 className="text-[28px] font-extrabold text-[#002a5f]">Finishing up</h1>
@@ -61,7 +61,7 @@ const Summary = ({ formData, setFormData, currentStep, goToStep, setSuccess }: S
                 /{planPrefix}
               </div>
             </div>
-            <div className="my-4 h-[1px] w-full bg-slate-300"></div>
+            <div className="my-4 h-[1px] w-full bg-slate-300" />
             {addonsData.map((addon, i) => (
               <div key={i} className="mb-2 flex h-6 flex-row items-center justify-between">
                 <h2 className="text-sm font-medium text-gray-400">{addon.title}</h2>
@@ -94,7 +94,7 @@ const Summary = ({ formData, setFormData, currentStep, goToStep, setSuccess }: S
           Confirm
         </button>
       </div>
-    </React.Fragment>
+    </Fragment>
   );
 };
 

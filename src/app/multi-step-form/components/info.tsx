@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Dispatch, SetStateAction, useEffect } from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import Input from "./ui/input";
 import { z } from "zod";
 import { useForm } from "react-hook-form";

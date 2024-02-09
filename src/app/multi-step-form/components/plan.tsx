@@ -78,7 +78,7 @@ const Plan = ({ formData, setFormData, currentStep, goToStep }: PlanProps) => {
                 checked={billing === "Yearly"}
                 onChange={() => setBilling(billing === "Monthly" ? "Yearly" : "Monthly")}
               />
-              <div className="peer h-5 w-11 rounded-full bg-[#002a5f] after:absolute after:start-[4px] after:top-[3px] after:h-[14px] after:w-[14px] after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-[22px] peer-checked:after:border-white peer-focus:outline-none rtl:peer-checked:after:-translate-x-full"></div>
+              <div className="peer h-5 w-11 rounded-full bg-[#002a5f] after:absolute after:start-[4px] after:top-[3px] after:h-[14px] after:w-[14px] after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-[22px] peer-checked:after:border-white peer-focus:outline-none rtl:peer-checked:after:-translate-x-full" />
             </label>
 
             <span className="text-[12px] font-medium text-[#002a5f]">Yearly</span>
